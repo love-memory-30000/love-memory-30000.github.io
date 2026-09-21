@@ -21,7 +21,7 @@
 </head>
 <body id="top">
   <header class="wrap mast">
-    <div><div class="eyebrow" id="chronicle">Love memory</div><h1>愛のメモリー</h1><p>人は皆、愛のメモリーを紡ぎ、生きていく。</p></div>
+    <div><div class="eyebrow" id="chronicle">Love memory</div><h1>愛のメモリー</h1><p id="description"></p></div>
     <div class="seal" aria-hidden="true">歩み</div>
   </header>
   <nav class="toolbar" aria-label="出来事の絞り込み"><div class="wrap toolbar-inner"><div class="filters" id="filters"></div><div class="count" aria-live="polite"><span id="count">0</span> RECORDS</div></div></nav>
@@ -40,7 +40,7 @@
       filters.innerHTML=['すべて',...categories].map((label,index)=>`<button class="filter" aria-pressed="${index===0}" data-filter="${index===0?'all':escapeHtml(label)}">${escapeHtml(label)}</button>`).join('');
       filters.addEventListener('click',event=>{const button=event.target.closest('.filter');if(!button)return;const value=button.dataset.filter, entries=[...document.querySelectorAll('.entry')];document.querySelectorAll('.filter').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));let shown=0;entries.forEach(entry=>{const visible=value==='all'||entry.dataset.category===value;entry.classList.toggle('hidden',!visible);if(visible)shown++});count.textContent=shown});
     };
-    fetch('./data.json').then(response=>{if(!response.ok)throw new Error('data.jsonを読み込めませんでした');return response.json()}).then(data=>{const events=[...data.events].sort(sortEvents);const years=events.map(event=>event.year);document.querySelector('#chronicle').textContent=`${data.meta.characterName}'s love memory ${Math.min(...years)} - ${Math.max(...years)}.`;document.querySelector('meta[name="description"]').content=data.meta.description;render(events);setupFilters(events);count.textContent=events.length}).catch(error=>{timeline.innerHTML=`<p>${escapeHtml(error.message)}</p>`});
+    fetch('./data.json').then(response=>{if(!response.ok)throw new Error('data.jsonを読み込めませんでした');return response.json()}).then(data=>{const events=[...data.events].sort(sortEvents);const years=events.map(event=>event.year);document.querySelector('#chronicle').textContent=`${data.meta.characterName}'s love memory ${Math.min(...years)} - ${Math.max(...years)}.`;document.querySelector('#description').textContent=data.meta.description;document.querySelector('meta[name="description"]').content=data.meta.description;render(events);setupFilters(events);count.textContent=events.length}).catch(error=>{timeline.innerHTML=`<p>${escapeHtml(error.message)}</p>`});
   </script>
 </body>
 </html>
