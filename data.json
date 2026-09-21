@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "characterName": "Character",
+    "description": "人は皆、愛のメモリーを紡ぎ、生きていく。"
+  },
+  "events": [
+    {"year": 1990, "month": null, "day": null, "order": 1, "title": "新しい物語のはじまり", "description": "春、家族に見守られながら誕生。よく笑い、よく眠る子だったそうです。", "category": "家族"},
+    {"year": 1996, "month": null, "day": null, "order": 1, "title": "小学校へ", "description": "大きなランドセルを背負って入学。放課後は公園で暗くなるまで遊びました。", "category": "暮らし"},
+    {"year": 2005, "month": null, "day": null, "order": 1, "title": "夢中になれるものと出会う", "description": "部活動を通じて、仲間と一つの目標を追う楽しさを知りました。", "category": "学び"},
+    {"year": 2008, "month": null, "day": null, "order": 1, "title": "はじめて親元を離れる", "description": "進学を機に新しい街へ。小さな部屋で、自分の暮らしをつくり始めました。", "category": "学び"},
+    {"year": 2012, "month": null, "day": null, "order": 1, "title": "社会人としての第一歩", "description": "期待と不安を胸に入社。失敗を重ねながら、仕事の基本を身につけました。", "category": "仕事"},
+    {"year": 2016, "month": null, "day": null, "order": 1, "title": "大きな仕事を任される", "description": "チームの中心となる役割に挑戦。周囲に頼ることも、仕事の一部だと学びました。", "category": "仕事"},
+    {"year": 2019, "month": null, "day": null, "order": 1, "title": "家族が増える", "description": "日々の優先順位が大きく変わり、何気ない時間をいっそう大切に感じるようになりました。", "category": "家族"},
+    {"year": 2026, "month": null, "day": null, "order": 1, "title": "これからの頁をつくる", "description": "これまでの経験を土台に、新しい挑戦へ。年表の続きは、今日からまた始まります。", "category": "暮らし"}
+  ]
+}
