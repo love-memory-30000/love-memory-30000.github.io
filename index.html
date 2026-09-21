@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="人生の節目を年代順に振り返る、個人の歴史年表。">
-  <title>私の人生年表</title>
+  <meta name="description" content="人は皆、愛のメモリーを紡ぎ、生きていく。">
+  <title>愛のメモリー</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e3a34'/%3E%3Cpath d='M18 16v32M18 23h12M18 34h20M18 45h28' stroke='%23f0c36a' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='30' cy='23' r='4' fill='%23f7f2e8'/%3E%3Ccircle cx='38' cy='34' r='4' fill='%23f7f2e8'/%3E%3Ccircle cx='46' cy='45' r='4' fill='%23f7f2e8'/%3E%3C/svg%3E">
   <style>
     :root{--ink:#1e302c;--muted:#6d7773;--paper:#f8f4ea;--card:#fffdf7;--line:#c9c0aa;--green:#1e3a34;--gold:#c89535;--red:#a84c3c;--shadow:0 18px 50px rgba(34,43,39,.10)}
@@ -21,33 +21,26 @@
 </head>
 <body id="top">
   <header class="wrap mast">
-    <div><div class="eyebrow">Personal Chronicle · 1990—Today</div><h1>私の人生年表</h1><p>振り返れば、何気ない一日も今につながる大切な一頁。生まれてから今日までの節目を、ひとつずつたどります。</p></div>
+    <div><div class="eyebrow" id="chronicle">Love memory</div><h1>愛のメモリー</h1><p>人は皆、愛のメモリーを紡ぎ、生きていく。</p></div>
     <div class="seal" aria-hidden="true">歩み</div>
   </header>
-  <nav class="toolbar" aria-label="出来事の絞り込み"><div class="wrap toolbar-inner"><div class="filters">
-    <button class="filter" aria-pressed="true" data-filter="all">すべて</button><button class="filter" aria-pressed="false" data-filter="family">家族</button><button class="filter" aria-pressed="false" data-filter="study">学び</button><button class="filter" aria-pressed="false" data-filter="work">仕事</button><button class="filter" aria-pressed="false" data-filter="life">暮らし</button>
-  </div><div class="count" aria-live="polite"><span id="count">8</span> RECORDS</div></div></nav>
-  <main class="wrap"><div class="timeline">
-    <section class="era"><div class="era-label"><strong>幼少期</strong><span>1990—2001</span></div><div class="entries">
-      <article class="entry" data-category="family"><div class="meta"><span class="year">1990</span><span class="age">0歳</span></div><h2>新しい物語のはじまり</h2><p>春、家族に見守られながら誕生。よく笑い、よく眠る子だったそうです。</p><span class="tag">家族</span></article>
-      <article class="entry" data-category="life"><div class="meta"><span class="year">1996</span><span class="age">6歳</span></div><h2>小学校へ</h2><p>大きなランドセルを背負って入学。放課後は公園で暗くなるまで遊びました。</p><span class="tag">暮らし</span></article>
-    </div></section>
-    <section class="era"><div class="era-label"><strong>学生時代</strong><span>2002—2011</span></div><div class="entries">
-      <article class="entry" data-category="study"><div class="meta"><span class="year">2005</span><span class="age">15歳</span></div><h2>夢中になれるものと出会う</h2><p>部活動を通じて、仲間と一つの目標を追う楽しさを知りました。</p><span class="tag">学び</span></article>
-      <article class="entry" data-category="study"><div class="meta"><span class="year">2008</span><span class="age">18歳</span></div><h2>はじめて親元を離れる</h2><p>進学を機に新しい街へ。小さな部屋で、自分の暮らしをつくり始めました。</p><span class="tag">学び</span></article>
-    </div></section>
-    <section class="era"><div class="era-label"><strong>社会人</strong><span>2012—2020</span></div><div class="entries">
-      <article class="entry" data-category="work"><div class="meta"><span class="year">2012</span><span class="age">22歳</span></div><h2>社会人としての第一歩</h2><p>期待と不安を胸に入社。失敗を重ねながら、仕事の基本を身につけました。</p><span class="tag">仕事</span></article>
-      <article class="entry" data-category="work"><div class="meta"><span class="year">2016</span><span class="age">26歳</span></div><h2>大きな仕事を任される</h2><p>チームの中心となる役割に挑戦。周囲に頼ることも、仕事の一部だと学びました。</p><span class="tag">仕事</span></article>
-      <article class="entry" data-category="family"><div class="meta"><span class="year">2019</span><span class="age">29歳</span></div><h2>家族が増える</h2><p>日々の優先順位が大きく変わり、何気ない時間をいっそう大切に感じるようになりました。</p><span class="tag">家族</span></article>
-    </div></section>
-    <section class="era"><div class="era-label"><strong>現在</strong><span>2021—TODAY</span></div><div class="entries">
-      <article class="entry" data-category="life"><div class="meta"><span class="year">2026</span><span class="age">現在</span></div><h2>これからの頁をつくる</h2><p>これまでの経験を土台に、新しい挑戦へ。年表の続きは、今日からまた始まります。</p><span class="tag">暮らし</span></article>
-    </div></section>
-  </div><footer class="closing"><strong>続きは、これから。</strong><span>人生の節目を記す個人年表</span><a class="top" href="#top">最初へ戻る ↑</a></footer></main>
+  <nav class="toolbar" aria-label="出来事の絞り込み"><div class="wrap toolbar-inner"><div class="filters" id="filters"></div><div class="count" aria-live="polite"><span id="count">0</span> RECORDS</div></div></nav>
+  <main class="wrap"><div class="timeline" id="timeline" aria-live="polite"></div><footer class="closing"><strong>続きは、これから。</strong><span>人生の節目を記す個人年表</span><a class="top" href="#top">最初へ戻る ↑</a></footer></main>
   <script>
-    const buttons=[...document.querySelectorAll('.filter')], entries=[...document.querySelectorAll('.entry')], count=document.querySelector('#count');
-    buttons.forEach(button=>button.addEventListener('click',()=>{const value=button.dataset.filter;buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));let shown=0;entries.forEach(entry=>{const visible=value==='all'||entry.dataset.category===value;entry.classList.toggle('hidden',!visible);if(visible)shown++});count.textContent=shown}));
+    const timeline=document.querySelector('#timeline'), filters=document.querySelector('#filters'), count=document.querySelector('#count');
+    const escapeHtml=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+    const formatDate=event=>[event.year,event.month,event.day].filter(value=>value!==null&&value!==undefined).join('.');
+    const sortEvents=(a,b)=>(a.year-b.year)||((a.month??0)-(b.month??0))||((a.day??0)-(b.day??0))||((a.order??0)-(b.order??0));
+    const render=events=>{
+      const groups=events.reduce((result,event)=>{const decade=Math.floor(event.year/10)*10;(result[decade]??=[]).push(event);return result},{});
+      timeline.innerHTML=Object.entries(groups).map(([decade,items])=>`<section class="era"><div class="era-label"><strong>${decade}年代</strong><span>${decade}—${Number(decade)+9}</span></div><div class="entries">${items.map(event=>`<article class="entry" data-category="${escapeHtml(event.category)}"><div class="meta"><span class="year">${formatDate(event)}</span></div><h2>${escapeHtml(event.title)}</h2><p>${escapeHtml(event.description)}</p><span class="tag">${escapeHtml(event.category)}</span></article>`).join('')}</div></section>`).join('');
+    };
+    const setupFilters=events=>{
+      const categories=[...new Set(events.map(event=>event.category))];
+      filters.innerHTML=['すべて',...categories].map((label,index)=>`<button class="filter" aria-pressed="${index===0}" data-filter="${index===0?'all':escapeHtml(label)}">${escapeHtml(label)}</button>`).join('');
+      filters.addEventListener('click',event=>{const button=event.target.closest('.filter');if(!button)return;const value=button.dataset.filter, entries=[...document.querySelectorAll('.entry')];document.querySelectorAll('.filter').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));let shown=0;entries.forEach(entry=>{const visible=value==='all'||entry.dataset.category===value;entry.classList.toggle('hidden',!visible);if(visible)shown++});count.textContent=shown});
+    };
+    fetch('./data.json').then(response=>{if(!response.ok)throw new Error('data.jsonを読み込めませんでした');return response.json()}).then(data=>{const events=[...data.events].sort(sortEvents);const years=events.map(event=>event.year);document.querySelector('#chronicle').textContent=`${data.meta.characterName}'s love memory ${Math.min(...years)} - ${Math.max(...years)}.`;document.querySelector('meta[name="description"]').content=data.meta.description;render(events);setupFilters(events);count.textContent=events.length}).catch(error=>{timeline.innerHTML=`<p>${escapeHtml(error.message)}</p>`});
   </script>
 </body>
 </html>
