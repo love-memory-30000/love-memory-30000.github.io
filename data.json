@@ -1,16 +1,32 @@
 {
   "meta": {
-    "characterName": "Character",
+    "characterName": "S",
     "description": "人は皆、愛のメモリーを紡ぎ、生きていく。"
   },
   "events": [
-    {"year": 1990, "month": null, "day": null, "order": 1, "title": "新しい物語のはじまり", "description": "春、家族に見守られながら誕生。よく笑い、よく眠る子だったそうです。", "category": "家族"},
-    {"year": 1996, "month": null, "day": null, "order": 1, "title": "小学校へ", "description": "大きなランドセルを背負って入学。放課後は公園で暗くなるまで遊びました。", "category": "暮らし"},
-    {"year": 2005, "month": null, "day": null, "order": 1, "title": "夢中になれるものと出会う", "description": "部活動を通じて、仲間と一つの目標を追う楽しさを知りました。", "category": "学び"},
-    {"year": 2008, "month": null, "day": null, "order": 1, "title": "はじめて親元を離れる", "description": "進学を機に新しい街へ。小さな部屋で、自分の暮らしをつくり始めました。", "category": "学び"},
-    {"year": 2012, "month": null, "day": null, "order": 1, "title": "社会人としての第一歩", "description": "期待と不安を胸に入社。失敗を重ねながら、仕事の基本を身につけました。", "category": "仕事"},
-    {"year": 2016, "month": null, "day": null, "order": 1, "title": "大きな仕事を任される", "description": "チームの中心となる役割に挑戦。周囲に頼ることも、仕事の一部だと学びました。", "category": "仕事"},
-    {"year": 2019, "month": null, "day": null, "order": 1, "title": "家族が増える", "description": "日々の優先順位が大きく変わり、何気ない時間をいっそう大切に感じるようになりました。", "category": "家族"},
-    {"year": 2026, "month": null, "day": null, "order": 1, "title": "これからの頁をつくる", "description": "これまでの経験を土台に、新しい挑戦へ。年表の続きは、今日からまた始まります。", "category": "暮らし"}
+    {"year": 1991, "month": 5, "day": null, "order": 1, "title": "この世に生を受ける", "description": "", "category": "人生"},
+    {"year": 1998, "month": 4, "day": null, "order": 1, "title": "小学校に入学する", "description": "", "category": "学び"},
+    {"year": 2004, "month": 4, "day": null, "order": 1, "title": "中学校に入学する", "description": "", "category": "学び"},
+    {"year": 2004, "month": 5, "day": null, "order": 1, "title": "13歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2005, "month": 1, "day": null, "order": 1, "title": "自殺未遂により入院する", "description": "", "category": "健康"},
+    {"year": 2005, "month": 5, "day": null, "order": 1, "title": "14歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2007, "month": 4, "day": null, "order": 1, "title": "高校に入学する", "description": "", "category": "学び"},
+    {"year": 2007, "month": 5, "day": null, "order": 1, "title": "16歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2008, "month": 3, "day": null, "order": 1, "title": "高校を中退する", "description": "", "category": "学び"},
+    {"year": 2008, "month": 4, "day": null, "order": 1, "title": "実家を出る", "description": "", "category": "暮らし"},
+    {"year": 2008, "month": 5, "day": null, "order": 1, "title": "17歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2009, "month": 5, "day": null, "order": 1, "title": "18歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2009, "month": 11, "day": null, "order": 1, "title": "すべての間違いが始まるX-Day", "description": "", "category": "人生"},
+    {"year": 2009, "month": 11, "day": null, "order": 2, "title": "父が性病により死去する", "description": "", "category": "家族"},
+    {"year": 2012, "month": 5, "day": null, "order": 1, "title": "21歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2012, "month": 7, "day": null, "order": 1, "title": "入籍する", "description": "", "category": "家族"},
+    {"year": 2015, "month": 5, "day": null, "order": 1, "title": "24歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2015, "month": 8, "day": null, "order": 1, "title": "幸せを見失う", "description": "", "category": "人生"},
+    {"year": 2016, "month": 5, "day": null, "order": 1, "title": "25歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2016, "month": 6, "day": null, "order": 1, "title": "離婚する", "description": "", "category": "家族"},
+    {"year": 2018, "month": 1, "day": null, "order": 1, "title": "養育費に終止符を打つ", "description": "", "category": "家族"},
+    {"year": 2018, "month": 2, "day": null, "order": 1, "title": "スクワットする", "description": "", "category": "人生"},
+    {"year": 2018, "month": 5, "day": null, "order": 1, "title": "27歳の誕生日を迎える", "description": "", "category": "節目"},
+    {"year": 2018, "month": 8, "day": null, "order": 1, "title": "ホストにデビューする", "description": "", "category": "仕事"}
   ]
 }
