@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="人は皆、愛のメモリーを紡ぎ、生きていく。">
+  <title>愛のメモリー</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e3a34'/%3E%3Cpath d='M18 16v32M18 23h12M18 34h20M18 45h28' stroke='%23f0c36a' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='30' cy='23' r='4' fill='%23f7f2e8'/%3E%3Ccircle cx='38' cy='34' r='4' fill='%23f7f2e8'/%3E%3Ccircle cx='46' cy='45' r='4' fill='%23f7f2e8'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#1e302c;--muted:#6d7773;--paper:#f8f4ea;--card:#fffdf7;--line:#c9c0aa;--green:#1e3a34;--gold:#c89535;--red:#a84c3c;--shadow:0 18px 50px rgba(34,43,39,.10)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--paper);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.75}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(#8f826e 0.6px,transparent .7px);background-size:8px 8px;mix-blend-mode:multiply}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.mast{padding:62px 0 28px;display:grid;grid-template-columns:1fr auto;align-items:end;border-bottom:1px solid var(--line)}
+    .eyebrow{font:700 .78rem/1.2 ui-monospace,monospace;letter-spacing:.18em;color:var(--red);text-transform:uppercase}.mast h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(2.5rem,7vw,5.8rem);line-height:.98;letter-spacing:-.05em;margin:.18em 0}.mast p{max-width:580px;color:var(--muted);font-size:1rem;margin:0}.seal{width:88px;height:88px;border:1px solid var(--red);color:var(--red);display:grid;place-items:center;border-radius:50%;font-family:serif;font-weight:700;letter-spacing:.16em;transform:rotate(7deg);margin:0 10px 8px 30px}
+    .toolbar{position:sticky;top:0;z-index:5;background:rgba(248,244,234,.9);backdrop-filter:blur(12px);padding:18px 0;border-bottom:1px solid rgba(201,192,170,.7)}.toolbar-inner{display:flex;gap:12px;align-items:center;justify-content:space-between}.filters{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}.filters::-webkit-scrollbar{display:none}.filter{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:9px 16px;font-weight:700;white-space:nowrap;cursor:pointer}.filter[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}.count{font:700 .8rem/1 ui-monospace,monospace;color:var(--muted);white-space:nowrap}
+    main{padding:48px 0 90px}.timeline{position:relative}.timeline:before{content:"";position:absolute;left:158px;top:8px;bottom:0;width:1px;background:var(--line)}.era{display:grid;grid-template-columns:130px 1fr;gap:58px;margin-bottom:64px}.era-label{position:sticky;top:96px;align-self:start;text-align:right}.era-label strong{display:block;font-family:"Yu Mincho",serif;font-size:1.5rem}.era-label span{font:700 .72rem/1.3 ui-monospace,monospace;color:var(--red);letter-spacing:.14em}.entries{display:grid;gap:20px}.entry{position:relative;background:var(--card);border:1px solid #ded5c4;border-radius:2px;padding:24px 26px;box-shadow:var(--shadow);transition:transform .2s ease,opacity .25s ease}.entry:before{content:"";position:absolute;left:-39px;top:30px;width:15px;height:15px;border:4px solid var(--paper);background:var(--gold);border-radius:50%;box-shadow:0 0 0 1px var(--line)}.entry:hover{transform:translateY(-2px)}.entry.hidden{display:none}.meta{display:flex;align-items:center;gap:10px;margin-bottom:7px}.year{font:800 1.08rem/1 ui-monospace,monospace;color:var(--red)}.age{font-size:.78rem;color:var(--muted);border-left:1px solid var(--line);padding-left:10px}.entry h2{font-family:"Yu Mincho",serif;font-size:1.35rem;line-height:1.35;margin:0 0 6px}.entry p{color:#53605c;margin:0;font-size:.96rem}.tag{display:inline-block;margin-top:14px;padding:3px 9px;background:#f1eadb;color:#655a47;border-radius:2px;font-size:.72rem;font-weight:700;letter-spacing:.06em}
+    .closing{margin-left:188px;border-top:1px solid var(--line);padding-top:28px;display:flex;justify-content:space-between;gap:20px;color:var(--muted)}.closing strong{color:var(--ink);font-family:"Yu Mincho",serif;font-size:1.25rem}.top{color:var(--ink);font-weight:700;text-decoration:none}
+    @media(max-width:700px){.wrap{width:min(100% - 26px,1120px)}.mast{padding-top:38px;display:block}.seal{display:none}.mast h1{font-size:3.2rem}.toolbar-inner{display:block}.count{display:block;margin-top:12px}.timeline:before{left:8px}.era{display:block;margin-left:30px}.era-label{position:static;text-align:left;margin-bottom:15px}.era-label strong{display:inline;margin-right:10px}.entry:before{left:-30px}.entry{padding:21px 19px}.closing{margin-left:30px;display:block}.top{display:block;margin-top:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.entry{transition:none}}
+  </style>
+</head>
+<body id="top">
+  <header class="wrap mast">
+    <div><div class="eyebrow" id="chronicle">Love memory</div><h1>愛のメモリー</h1><p id="description"></p></div>
+    <div class="seal" aria-hidden="true">歩み</div>
+  </header>
+  <nav class="toolbar" aria-label="出来事の絞り込み"><div class="wrap toolbar-inner"><div class="filters" id="filters"></div><div class="count" aria-live="polite"><span id="count">0</span> RECORDS</div></div></nav>
+  <main class="wrap"><div class="timeline" id="timeline" aria-live="polite"></div><footer class="closing"><strong>続きは、これから。</strong><span>人生の節目を記す個人年表</span><a class="top" href="#top">最初へ戻る ↑</a></footer></main>
+  <script>
+    const timeline=document.querySelector('#timeline'), filters=document.querySelector('#filters'), count=document.querySelector('#count');
+    const escapeHtml=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+    const formatDate=event=>[event.year,event.month,event.day].filter(value=>value!==null&&value!==undefined).join('.');
+    const sortEvents=(a,b)=>(a.year-b.year)||((a.month??0)-(b.month??0))||((a.day??0)-(b.day??0))||((a.order??0)-(b.order??0));
+    const render=events=>{
+      const groups=events.reduce((result,event)=>{const decade=Math.floor(event.year/10)*10;(result[decade]??=[]).push(event);return result},{});
+      timeline.innerHTML=Object.entries(groups).map(([decade,items])=>`<section class="era"><div class="era-label"><strong>${decade}年代</strong><span>${decade}—${Number(decade)+9}</span></div><div class="entries">${items.map(event=>`<article class="entry" data-category="${escapeHtml(event.category)}"><div class="meta"><span class="year">${formatDate(event)}</span></div><h2>${escapeHtml(event.title)}</h2><p>${escapeHtml(event.description)}</p><span class="tag">${escapeHtml(event.category)}</span></article>`).join('')}</div></section>`).join('');
+    };
+    const setupFilters=events=>{
+      const categories=[...new Set(events.map(event=>event.category))];
+      filters.innerHTML=['すべて',...categories].map((label,index)=>`<button class="filter" aria-pressed="${index===0}" data-filter="${index===0?'all':escapeHtml(label)}">${escapeHtml(label)}</button>`).join('');
+      filters.addEventListener('click',event=>{const button=event.target.closest('.filter');if(!button)return;const value=button.dataset.filter, entries=[...document.querySelectorAll('.entry')];document.querySelectorAll('.filter').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));let shown=0;entries.forEach(entry=>{const visible=value==='all'||entry.dataset.category===value;entry.classList.toggle('hidden',!visible);if(visible)shown++});count.textContent=shown});
+    };
+    fetch('./data.json').then(response=>{if(!response.ok)throw new Error('data.jsonを読み込めませんでした');return response.json()}).then(data=>{const events=[...data.events].sort(sortEvents);const years=events.map(event=>event.year);document.querySelector('#chronicle').textContent=`${data.meta.characterName}'s love memory ${Math.min(...years)} - ${Math.max(...years)}.`;document.querySelector('#description').textContent=data.meta.description;document.querySelector('meta[name="description"]').content=data.meta.description;render(events);setupFilters(events);count.textContent=events.length}).catch(error=>{timeline.innerHTML=`<p>${escapeHtml(error.message)}</p>`});
+  </script>
+</body>
+</html>
